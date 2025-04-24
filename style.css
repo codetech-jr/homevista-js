@@ -177,7 +177,7 @@ img{
 }
 
 .section .title h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #222;
     font-weight: 600;
     text-transform: capitalize;
@@ -217,7 +217,7 @@ img{
 }
 
 .hero .hero-content h1{
-    font-size: 4.5rem;
+    font-size: 6rem;
     font-weight: 500;
     text-transform: capitalize;
     color: #fff;
@@ -508,10 +508,11 @@ margin-top: 0.5rem;
 
 .about .content .row .col{
     width: 100%;
+    margin-block-end: auto;
 }
 
 .about .content .row .col h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
     color: #222;
     text-transform: capitalize;
@@ -718,7 +719,7 @@ margin-top: 0.5rem;
 /* process */
 .process{
     width: 100%;
-    height: auto;
+    height: 68rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* clip-path: polygon(100% 0%, 100% 85%, 50% 100%, 0% 85%, 0 0); */
@@ -726,7 +727,7 @@ margin-top: 0.5rem;
 
 .process .process-text{
     width: 100%;
-    height: 100%;
+    height: 57%;
     background: #222;
     padding: 50px;
     display: flex;
@@ -741,7 +742,7 @@ margin-top: 0.5rem;
 }
 
 .process .process-text .process-title h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fff;
     font-weight: 500;
     text-transform: capitalize;
@@ -811,7 +812,7 @@ margin-top: 0.5rem;
 
 .process .process-image{
     width: 100%;
-    height: 100%;
+    height: 57%;
     position: relative;
 }
 
@@ -1105,7 +1106,7 @@ margin-top: 0.5rem;
     width: 100%;
 }
 .footer .row .col h2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     text-transform: capitalize;
     color: var(--gold);
@@ -1184,13 +1185,26 @@ margin-top: 0.5rem;
 }
 
 
-@media (max-width: 1300px){
+
+@media (max-width: 1400px){
     .hero .hero-content{
         width: 80%;
     }
     .section .title{
         width: 60%;
     }
+    .process{
+        height: 65%;
+    }
+
+    .process .process-text{
+        height: 100%;
+    }
+
+    .process .process-image{
+        height: 100%;
+    }
+
     .process .process-text .process-title{
         width: 70%;
     }
@@ -1364,6 +1378,9 @@ margin-top: 0.5rem;
     }
     .process .process-text{
         padding: 30px;
+    }
+    .hero{
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/img/home.jpg") center/515% no-repeat;
     }
 }
 
